@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Cards</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+</head>
+
+<body>
+
+    @@include('.././components/back-to-home-btn.html')
+
+    <section id="progress-steps">
+        <div class="wrapper progress-steps">
+            <h1>Progress Steps</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
+            <button class="btn" id="prev" type="button" disabled>Prev</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/progress-steps-script.min.js"></script>
+</body>
+
+</html>

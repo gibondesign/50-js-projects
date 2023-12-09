@@ -1,0 +1,183 @@
+@use './structure' as *;
+@use './colors' as *;
+@use './typography' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #dfdfdf;
+}
+
+// Menu styling
+
+.menu {
+	ul {
+		display: flex;
+		flex-direction: row;
+		gap: 22px;
+		list-style-type: none;
+	}
+}
+
+// Back To  Home btn
+.back-to-home-btn {
+	padding: 8px 4px;
+	margin-top: 10px;
+	border-radius: 4px;
+	a {
+		text-decoration: none;
+	}
+}
+
+// Project 1 - expanding cards
+.expanding-cards {
+	.panels-container {
+		display: flex;
+	}
+
+	.panel {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 80vh;
+		border-radius: 40px;
+		color: $pure-white;
+		cursor: pointer;
+		flex: 0.5;
+		margin: 10px;
+		position: relative;
+		transition: flex 0.7s ease-in;
+
+		&--title {
+			font-size: 24px;
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			margin: 0;
+			opacity: 0;
+		}
+
+		&-active {
+			flex: 5;
+			.panel--title {
+				opacity: 1;
+				transition: opacity 0.5s ease-in 0.5s;
+			}
+		}
+
+		&--1 {
+			background-image: url(../img/expanding-cards/beach-2178747_1280.jpg), linear-gradient(#eb01a5, #d13531);
+		}
+		&--2 {
+			background-image: url(../img/expanding-cards/heaven-5281668_1280.jpg);
+		}
+		&--3 {
+			background-image: url(../img/expanding-cards/path-6567149_1280.jpg);
+		}
+		&--4 {
+			background-image: url(../img/expanding-cards/valley-4646114_1280.jpg);
+		}
+		&--5 {
+			background-image: url(../img/expanding-cards/water-3271579_1280.jpg);
+		}
+		&--6 {
+			background-image: url(../img/expanding-cards/water-3354063_1280.jpg);
+		}
+	}
+
+	@media (max-width: 480px) {
+		.panel:nth-of-type(5),
+		.panel:nth-of-type(6) {
+			display: none;
+		}
+	}
+}
+
+// Project 2 - Progress Steps
+
+.progress-steps {
+	$blue-progress-color: #3494db;
+	$grey-progress-color: #bcbcbc;
+
+	text-align: center;
+
+	.progress-container {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-bottom: 30px;
+		max-width: 100%;
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.progress-bar,
+	.progress-container::before {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		height: 4px;
+		transform: translateY(-50%);
+		transition: width 0.4s ease;
+		z-index: -1;
+	}
+	
+	.progress-container::before {
+		content: '';
+		background-color: $grey-progress-color;
+		width: 100%;
+	}
+	.progress-bar {
+		background-color: $blue-progress-color;
+		width: 0%;
+	}
+	.circle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		width: 40px;
+		background-color: #fff;
+		color: #999;
+		border: 3px solid $grey-progress-color;
+		border-radius: 50%;
+		transition: border 0.4 ease;
+
+		&.active {
+			border-color: $blue-progress-color;
+			transition: border 0.4s ease 200ms;
+		}
+	}
+
+	.btn {
+		background-color: $blue-progress-color;
+		color: #fff;
+		border: 0;
+		border-radius: 8px;
+		cursor: pointer;
+		font-family: inherit;
+		padding: 8px 30px;
+		margin: 5px;
+		font-size: 14px;
+
+		&:active {
+			transform: scale(0.96);
+		}
+		&:focus {
+			outline: 0;
+		}
+		&:disabled {
+			background-color: $grey-progress-color;
+			cursor: not-allowed;
+			// transform: scale(1);
+		}
+	}
+}

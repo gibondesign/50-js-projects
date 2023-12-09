@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap");
+section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dfdfdf;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  list-style-type: none;
+}
+
+.expanding-cards .panels-container {
+  display: flex;
+}
+.expanding-cards .panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.expanding-cards .panel--title {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.expanding-cards .panel-active {
+  flex: 5;
+}
+.expanding-cards .panel-active .panel--title {
+  opacity: 1;
+  transition: opacity 0.5s ease-in 0.5s;
+}
+.expanding-cards .panel--1 {
+  background-image: url(../img/expanding-cards/beach-2178747_1280.jpg), linear-gradient(#eb01a5, #d13531);
+}
+.expanding-cards .panel--2 {
+  background-image: url(../img/expanding-cards/heaven-5281668_1280.jpg);
+}
+.expanding-cards .panel--3 {
+  background-image: url(../img/expanding-cards/path-6567149_1280.jpg);
+}
+.expanding-cards .panel--4 {
+  background-image: url(../img/expanding-cards/valley-4646114_1280.jpg);
+}
+.expanding-cards .panel--5 {
+  background-image: url(../img/expanding-cards/water-3271579_1280.jpg);
+}
+.expanding-cards .panel--6 {
+  background-image: url(../img/expanding-cards/water-3354063_1280.jpg);
+}
+@media (max-width: 480px) {
+  .expanding-cards .panel:nth-of-type(5),
+  .expanding-cards .panel:nth-of-type(6) {
+    display: none;
+  }
+}
+
+.progress-steps {
+  text-align: center;
+}
+.progress-steps .progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.progress-steps .progress,
+.progress-steps .progress::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  transform: translateY(-50%);
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.progress-steps .progress {
+  background-color: #bcbcbc;
+  width: 100%;
+}
+.progress-steps .progress::after {
+  content: "";
+  background-color: #3494db;
+  width: 20%;
+}
+.progress-steps .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  color: #999;
+  border: 3px solid #bcbcbc;
+  border-radius: 50%;
+  transition: border 0.4 ease;
+}
+.progress-steps .circle.active {
+  border-color: #3494db;
+}
+.progress-steps .btn {
+  background-color: #3494db;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+.progress-steps .btn:active {
+  transform: scale(0.96);
+}
+.progress-steps .btn:focus {
+  outline: 0;
+}
+.progress-steps .btn:disabled {
+  background-color: #bcbcbc;
+  cursor: not-allowed;
+  transform: scale(1);
+}/*# sourceMappingURL=main.css.map */
