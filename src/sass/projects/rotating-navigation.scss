@@ -16,6 +16,10 @@
 
 		&.show-nav {
 			transform: rotate(-20deg);
+			.circle{
+				transform: rotate(-70deg);
+
+			}
 		}
 	}
 }
@@ -93,8 +97,8 @@ nav {
 			text-transform: uppercase;
 			color: #fff;
 			margin: 40px 0;
-            // transform: translateX(-100%);    
-            transition: transform 0.4s ease-in;
+            // transform: translateX(-140%);    
+            transition: transform 0.4s ease-in, margin 0.4s ease-in;
 
             
 
@@ -107,18 +111,3 @@ nav {
 }
 
 
-li {
-    margin-left: calc(15px * (index() + 1));
-  }
-  
-  @function index() {
-    $selector: &;
-    $index: 0;
-  
-    @while $selector {
-      $selector: selector-nth($selector, $index);
-      $index: $index + 1;
-    }
-  
-    @return $index;
-  }
