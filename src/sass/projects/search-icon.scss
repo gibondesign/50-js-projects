@@ -2,6 +2,9 @@ body {
 	height: 100vh;
 	background-image: linear-gradient(90deg, #80b3f5, #589af0);
 }
+
+$main-size: 50px;
+$active-input-width: 200px;
 .search-icon {
 	&--section {
 		display: flex;
@@ -10,17 +13,25 @@ body {
 	}
 	&--container {
 		position: relative;
+		&.active {
+			.search-input {
+				width: $active-input-width;
+			}
+			.search-btn {
+				transform: translateX(calc($active-input-width-2px));
+			}
+		}
 	}
 }
 .search {
-	$main-size: 50px;
 	&-input {
 		background-color: #fff;
 		border: 0;
 		font-size: 18px;
 		padding: 15px;
+		height: $main-size;
 		width: $main-size;
-		transition: width 0.3s ease;
+		transition: width 0.3s linear;
 		&:focus {
 			outline: none;
 		}
@@ -35,10 +46,9 @@ body {
 		left: 0;
 		width: $main-size;
 		height: $main-size;
-		transition: transform 0.3 ease;
+		transition: transform 0.3s linear;
 		&:focus {
 			outline: none;
 		}
 	}
 }
-
