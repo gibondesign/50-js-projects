@@ -20,11 +20,8 @@ body {
 // Menu styling
 
 .menu {
-	ul {
-		display: flex;
-		flex-direction: row;
-		gap: 22px;
-		list-style-type: none;
+	li{
+		margin-bottom: 10px;
 	}
 }
 
