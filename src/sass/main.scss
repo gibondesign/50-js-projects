@@ -20,15 +20,16 @@ body {
 // Menu styling
 
 .menu {
+	padding-left: 24px;
 	li{
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 	}
 }
 
 // Back To  Home btn
 .back-to-home-btn {
 	padding: 8px 4px;
-	margin-top: 10px;
+	margin-top: 12px;
 	border-radius: 4px;
 	a {
 		text-decoration: none;
@@ -50,7 +51,7 @@ body {
 		color: $pure-white;
 		cursor: pointer;
 		flex: 0.5;
-		margin: 10px;
+		margin: 12px;
 		position: relative;
 		transition: flex 0.7s ease-in;
 
