@@ -2,6 +2,9 @@ $left-bg-color: rgba(87, 84, 236, 0.7);
 $right-bg-color: rgba(43, 43, 43, 0.8);
 $left-btn-hover-color: #006fcd;
 $right-btn-hover-color: #107c10;
+$hover-width: 70vw;
+$no-hover-width: 30vw;
+$transition-speed: 0.8s;
 
 .split {
 	&--section {
@@ -20,6 +23,8 @@ $right-btn-hover-color: #107c10;
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: width $transition-speed ease;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -30,11 +35,13 @@ $right-btn-hover-color: #107c10;
 	&.left {
 		left: 0;
 		background: url(../../img/ps.jpg);
+		background-position: right;
 		&::before {
 			background-color: $left-bg-color;
 		}
 		.split--btn:hover {
 			background-color: $left-btn-hover-color;
+			border-color: $left-btn-hover-color;
 		}
 	
 	}
@@ -46,6 +53,7 @@ $right-btn-hover-color: #107c10;
 		}
 		.split--btn:hover {
 			background-color: $right-btn-hover-color;
+			border-color: $right-btn-hover-color;
 		}
 	}
 
@@ -74,7 +82,23 @@ $right-btn-hover-color: #107c10;
 		font-size: 1rem;
 		width: 15rem;
 		padding: 1rem;
-	}
+	}	
+}
 
-	
+
+.hover-left{
+	.left {
+		width: $hover-width;
+	}
+	.right {
+		width: $no-hover-width;
+	}
+}
+.hover-right{
+	.right {
+		width: $hover-width;
+	}
+	.left {
+		width: $no-hover-width;
+	}
 }
