@@ -13,7 +13,6 @@
 
 body {
 	background-color: #dfdfdf;
-	min-height: 100vh;
 	position: relative;
 }
 
@@ -28,8 +27,10 @@ body {
 
 // Back To  Home btn
 .back-to-home-btn {
+	position: absolute;
+	top: 24px;
+	left: 5%;
 	padding: 8px 4px;
-	margin-top: 12px;
 	border-radius: 4px;
 	a {
 		text-decoration: none;
