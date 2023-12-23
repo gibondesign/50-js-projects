@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random dad jokes</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/dad-jokes.min.css">
+</head>
+
+<body>
+    <section>
+        @@include('.././components/back-to-home-btn.html')
+                <h1>Dad Jokes</h1>
+    </section>
+    <section>
+        <div class="wrapper flex-center ">
+          <div class="jokes-container">
+            <h3>Jokes for You</h3>
+            <div id="joke" class="joke">
+                Click the button below for dad joke...
+            </div>
+            <button id="jokeBtn" class="joke-btn">Get another Joke<i class="fa-solid fa-rotate-right btn-icon" id="generate"></i></button>
+          </div>
+        </div>
+        </section>
+ 
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/dad-jokes-script.min.js"></script>
+    
+</body> 
+
+</html>
