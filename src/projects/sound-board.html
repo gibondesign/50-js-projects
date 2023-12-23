@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/sound-board.min.css">
+</head>
+
+<body>
+    <section>
+        @@include('.././components/back-to-home-btn.html')
+        <h1>Buttons with sounds</h1>
+
+
+    </section>
+    <section>
+        <audio id="applause" src="./../sounds/applause.mp3"></audio>
+        <audio id="boo" src="./../sounds/boo.mp3"></audio>
+        <audio id="gasp" src="./../sounds/gasp.mp3"></audio>
+        <audio id="tada" src="./../sounds/tada.mp3"></audio>
+        <audio id="victory" src="./../sounds/victory.mp3"></audio>
+        <audio id="wrong" src="./../sounds/wrong.mp3"></audio>
+        <div class="wrapper flex-center sounds-wrapper">
+
+            <div id="buttons">
+
+            </div>
+        </div>
+    </section>
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/sound-board-script.min.js"></script>
+
+</body>
+
+</html>
