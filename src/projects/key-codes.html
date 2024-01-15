@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Codes generator</title>
+    <title>Event Key Codes</title>
 
     <!-- FontAwesome kit -->
     <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
@@ -17,9 +17,23 @@
         @@include('.././components/back-to-home-btn.html')
                 <h1>KeyCodes</h1>
     </section>
-    <section>
-        <div class="wrapper flex-center ">
-          
+    <section class="flex-center">
+        <div class="wrapper" id="insert">
+            <div  class="key">
+                <p id="key">a</p>
+                <small>event.key</small>
+            </div>
+            <div  class="key">
+                <p id="keycode">65</p>
+                <small>event.KeyCode</small>
+            </div>
+          <div  class="key">
+             <p id="eventcode">keyA</p>
+        <small>event.code</small>
+        </div>
+            <div class="key">
+                Press any key to get a KeyCode
+            </div>
         </div>
         </section>
  
