@@ -1,0 +1,42 @@
+body{
+    background-color: #ffdff6;
+}
+
+
+h3{
+    margin: 10px 0 20px;
+}
+
+.choice-container{
+width: 500px;
+margin: 0 auto;
+}
+
+.choice-textarea{
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.tags{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    .tag{
+        color: #fff;
+        background-color: #1c4ebc;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+    }
+    
+    .highlight{
+        background-color: #e835b5;
+    }
+}

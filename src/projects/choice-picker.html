@@ -15,14 +15,37 @@
 <body>
     <section>
         @@include('.././components/back-to-home-btn.html')
-                <h1>Random Choice Picker</h1>
+        <h1>Random Choice Picker</h1>
     </section>
     <section>
-        </section>
- 
+
+        <div class="wrapper">
+            <div class="choice-container flex-center">
+
+                <h3>Enter all of the choices divided by a comma (,).
+                    <br>Press enter when you're done.
+                </h3>
+                <textarea class="choice-textarea" id="textarea"
+                    placeholder="Enter choices here..."></textarea>
+                <div class="tags">
+                    <!-- <p class="tag">choices 1</p>
+                    <p class="tag highlight">choices 2</p>
+                    <p class="tag">choices 3</p>
+                    <p class="tag">choices 4</p>
+                    <p class="tag">choices 4</p>
+                    <p class="tag">choices 4</p>
+                    <p class="tag">choices 4</p>
+                    <p class="tag">choices 4</p>
+                    <p class="tag">choices 4</p>
+                    <p class="tag">choices 4</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./../js/script.min.js"></script>
-    <script src="./../js/projects/choice-picker-script.js"></script>
-    
-</body> 
+    <script src="./../js/projects/choice-picker-script.min.js"></script>
+
+</body>
 
 </html>
