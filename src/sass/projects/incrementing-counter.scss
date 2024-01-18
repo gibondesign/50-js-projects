@@ -1,13 +1,15 @@
-.counter-container {
+.counter-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: 30px 50px;
 	text-align: center;
 
-	.counter{
+	.counter {
 		font-size: 56px;
 		margin-top: 10px;
+		width: 200px;
+		text-align: center;
 	}
 }
 
