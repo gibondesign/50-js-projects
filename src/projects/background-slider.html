@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Slider</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/background-slider.min.css">
+</head>
+
+<body>
+    <section>
+        @@include('.././components/back-to-home-btn.html')
+        <div class="wrapper">
+            <h1>Background Image Slider</h1>
+        </div>
+    </section>
+    <section class="flex-center column">
+        <div class="slider-container">
+            <div class="slide active"
+                style="background-image: url('https://images.unsplash.com/photo-1590434972117-eaac0c4b193e?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1611938379616-fc879d3a90ba?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1518467166778-b88f373ffec7?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1500479694472-551d1fb6258d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1470854989922-5be2f7456d78?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+            <button class="arrow left-arrow" id="left-arrow">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="arrow right-arrow" id="right-arrow">
+                <i class="fas fa-arrow-right"></i>
+
+            </button>
+        </div>
+    </section>
+
+
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/background-slider-script.min.js"></script>
+
+</body>
+
+</html>
