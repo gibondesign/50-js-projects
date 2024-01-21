@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
+
+body {
+	font-family: 'Heebo', sans-serif;
+}
+
+body {
+	transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+
+
+$accent-color: #e74c3c;
+
+:root {
+--primary-color: #000;
+--secondary-color: #fff;
+}
+
+
+body.dark {
+	--primary-color: #fff;
+	--secondary-color: #333;
+}
+
+body.dark {
+	background-color: #272727;
+	color: var(--primary-color);
+}
+
+.theme-toggle {
+	margin-bottom: 40px;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	border: 0;
+	border-radius: 4px;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.clock-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.clock {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	.needle {
+		background-color: var(--primary-color);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 3px;
+		transform-origin: bottom center;
+		transform: translate(-50%, -100%) rotate(0deg);
+		transition: transform 0.5s ease;
+
+		&.hour {
+			height: 65px;
+			width: 6px;
+			border-radius: 4px;
+		}
+		&.minute {
+			height: 100px;
+		}
+		&.second {
+			height: 90px;
+			background-color: $accent-color;
+		}
+	}
+	.center-point {
+		background-color: $accent-color;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		&::after {
+			content: '';
+			background-color: var(--primary-color);
+			width: 4px;
+			height: 4px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+	}
+}
+
+.time {
+	font-size: 60px;
+}
+.date {
+	display: flex;
+	gap: 8px;
+	color: #838383;
+	font-size: 14px;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	.circle {
+		background-color: var(--primary-color);
+		color: var(--secondary-color);
+		border-radius: 50%;
+		height: 22px;
+		width: 22px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center; 	
+		line-height: 18px;
+		transition: all 0.5s ease-in;
+		font-size: 12px;
+	}
+}
