@@ -1,0 +1,35 @@
+body {
+	background-color: lightsteelblue;
+}
+
+.empty {
+	height: 120px;
+	width: 120px;
+	border: 3px solid black;
+	background-color: #fff;
+	margin: 12px;
+}
+
+.fill {
+	background-image: url('https://source.unsplash.com/random/150x150');
+	width: 114px;
+	height: 114px;
+	cursor: pointer;
+}
+
+.hold {
+	border: solid 5px #ccc;
+}
+
+.hovered {
+	background-color: #333;
+	border-color: #fff;
+	border-style: dashed;
+}
+
+
+@media (max-width: 800px) {
+	.wrapper {
+		flex-direction: column;
+	}
+}
