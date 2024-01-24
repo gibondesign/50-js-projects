@@ -58,7 +58,7 @@ const DrawLine = (x1, y1, x2, y2) => {
 	ctx.stroke()
 }
 
-colorEl.addEventListener('change', e => (color = e.target.value))
+colorEl.addEventListener('input', e => (color = e.target.value))
 
 increaseBtn.addEventListener('click', () => {
 	size += 2
