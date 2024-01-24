@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Pad UI</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/drawing-pad.min.css">
+</head>
+
+<body>
+    <section>
+        @@include('.././components/back-to-home-btn.html')
+        <h1>Drawing Pad UI</h1>
+    </section>
+    <section>
+        <div class="wrapper flex-center column">
+            <canvas class="canvas" id="canvas"></canvas>
+            <div class="toolbox">
+                <button id="decrease">-</button>
+                <span id="size">10</span>
+                <button id="increase">+</button>
+                <input type="color" id="color">
+                <button id="clear">X</button>
+            </div>
+    </section>
+
+
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/drawing-pad-script.min.js"></script>
+
+</body>
+
+</html>
