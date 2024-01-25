@@ -29,3 +29,8 @@ section {
 .column {
 	flex-direction: column;
 }
+
+.project-list-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
