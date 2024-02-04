@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Effect</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/typewriter-effect.min.css">
+</head>
+
+<body>
+    <header>
+        @@include('.././components/back-to-home-btn.html')
+        <h1>Typewriter Effect</h1>
+    </header>
+    <main>
+
+        <div class="wrapper flex-center column">
+            <h2 id="text">Starting...</h2>
+
+            <div class="speed-controler">
+                <label for="speed">Speed:</label>
+                <input type="number" name="speed" id="speed" value="1" min="1" max="6" step="1">
+            </div>
+            <p class="info">Type Your own text:</p>
+            <form class="text-form">
+                <input class="text-input" type="text" name="text" id="textInput">
+                <button type="button" id="submitBtn">Submit</button>
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/typewriter-effect-script.min.js"></script>
+
+</body>
+
+</html>

@@ -30,7 +30,15 @@ section {
 	flex-direction: column;
 }
 
-.project-list-container{
+.project-list-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 3;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+
+@media (min-width: 700px) {
+	.project-list-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
