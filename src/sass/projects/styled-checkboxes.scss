@@ -1,0 +1,39 @@
+$label-width: 80px;
+$label-height: 40px;
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	width: 200px;
+
+	.toggle {
+		visibility: hidden;
+	}
+	.label {
+		position: relative;
+		width: $label-width;
+		height: $label-height;
+		background-color: grey;
+		border-radius: 50px;
+		cursor: pointer;
+		margin: 0 15px 0;
+		padding: 4px;
+	}
+
+	.toggle:checked + .label {
+		background-color: green;
+		.ball {
+			margin-left: calc($label-width - $label-height);
+		}
+	}
+	.ball {
+		aspect-ratio: 1 / 1;
+		height: 100%;
+		background: #fff;
+		border-radius: 50px;
+		left: 30px;
+		margin-left: 0px;
+		transition: margin-left 0.3s ease;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Checkboxes</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/styled-checkboxes.min.css">
+</head>
+
+<body>
+    <section>
+        @@include('.././components/back-to-home-btn.html')
+        <h1>Styled Checkboxes</h1>
+    </section>
+    <section>
+        <div class="wrapper flex-center column">
+            <h2>How do you want your project to be?</h2>
+            <p>Select the options that interest you</p>
+
+            <div class="toggle-container">
+                <input type="checkbox" id="good" class="toggle">
+                <label for="good" class="label">
+                    <div class="ball"></div>
+                </label>
+                <span>Good</span>
+            </div>
+
+            <div class="toggle-container">
+                <input type="checkbox" id="cheap" class="toggle">
+                <label for="cheap" class="label">
+                    <div class="ball"></div>
+                </label>
+                <span>Cheap</span>
+            </div>
+
+            <div class="toggle-container">
+                <input type="checkbox" id="fast" class="toggle">
+                <label for="fast" class="label">
+                    <div class="ball"></div>
+                </label>
+                <span>Fast</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/styled-checkboxes-script.min.js"></script>
+
+</body>
+
+</html>
