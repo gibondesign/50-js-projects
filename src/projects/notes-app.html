@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/43d38edbaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.min.css">
+    <link rel="stylesheet" href="./../css/projects/notes-app.min.css">
+</head>
+
+<body>
+    <section>
+        @@include('.././components/back-to-home-btn.html')
+        <h1>Notes App</h1>
+    </section>
+    <section>
+        <div class="wrapper flex row note-app-container">
+            <button class="add" id="add">
+                <i class="fas fa-plus"></i> Add note
+            </button>
+
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"
+        integrity="sha512-tjg8I2d6Fi0OBGz1csmr7RfI4uupYaCfL/RqhVRTS42RMGwfBsjwBGmhzhI+e2dPmyew8cFkoxnVkGvADDLvbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../js/script.min.js"></script>
+    <script src="./../js/projects/notes-app-script.min.js"></script>
+
+</body>
+
+</html>
